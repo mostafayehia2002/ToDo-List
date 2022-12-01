@@ -140,9 +140,12 @@
 #deleteAll {
     background-color: #E91E63;
     margin: 5px;
+    cursor: pointer;
 }
 
 #finishAll {
     background-color: #03A9F4;
     margin: 5px;
+    cursor: pointer;
+
 }
