@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.todo-container {
+    width: 600px;
+    height: auto;
+    background-color: #f6f6f6;
+    margin: 30px auto 0;
+}
+
+.todo-container .add-task {
+    padding: 15px;
+    position: relative;
+    background-color: #009688;
+}
+
+.add-task input {
+    display: inline-block;
+    height: 39px;
+    width: calc(100% - 15px);
+    border: none;
+    padding: 10px 15px;
+    outline: none;
+    background-color: rgba(255, 255, 255, .3);
+    color: #fff;
+}
+
+.add-task .plus {
+    position: absolute;
+    right: 12px;
+    height: 39px;
+    width: 39px;
+    background-color: #fff;
+    border-radius: 50%;
+    line-height: 42px;
+    text-align: center;
+    color: #009688;
+    cursor: pointer;
+    font-size: 38px;
+    font-weight: bolder;
+    transition: transform .3s;
+
+}
+
+.add-task .plus:hover {
+    transform: rotate(90deg);
+}
+
+
+.todo-content {
+    padding: 15px;
+
+}
+
+.todo-content .no-task-massage {
+    font-size: 15px;
+    color: #777
+}
+
+.todo-content>span {
+    display: block;
+    padding: 10px;
+    background-color: #fff;
+
+}
+
+.todo-content>span:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+
+.task-box .delete {
+    float: right;
+    padding: 4px 10px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 4px;
+    background-color: #E91E63;
+    cursor: pointer;
+
+}
+
+.task-box.finished {
+    text-decoration: line-through;
+}
+
+
+
+.task-box {
+    overflow-wrap: break-word;
+}
+
+/***************/
+.task-state {
+    overflow: hidden;
+    margin: 10px auto;
+    width: 600px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.task-state .task-count {
+    float: left;
+    width: 35%;
+    padding: 10px;
+}
+
+.task-state .task-completed {
+    float: right;
+    width: 40%;
+    padding: 10px;
+    text-align: right;
+
+}
+
+.task-state .task-count span,
+.task-state .task-completed span,
+#deleteAll,
+#finishAll {
+    color: #fff;
+    padding: 1px 4px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.task-state .task-count span {
+    background-color: #E91E63;
+}
+
+.task-state .task-completed span {
+    background-color: #03A9F4;
+}
+
+#deleteAll {
+    background-color: #E91E63;
+    margin: 5px;
+}
+
+#finishAll {
+    background-color: #03A9F4;
+    margin: 5px;
+}
